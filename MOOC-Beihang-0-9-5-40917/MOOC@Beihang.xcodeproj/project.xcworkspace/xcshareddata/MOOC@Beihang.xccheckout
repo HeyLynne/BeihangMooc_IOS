@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>38C45D97-1056-479A-BDC1-8CE0AD6AD630</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MOOC@Beihang</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2CF7873FADDB7763710BED1E65D625C39AC45A07</key>
+		<string>https://github.com/HeyLynne/MOOC_Beihang_20150710.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MOOC-Beihang-version1/MOOC-Beihang-0-9-5-40917/MOOC@Beihang.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2CF7873FADDB7763710BED1E65D625C39AC45A07</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/HeyLynne/MOOC_Beihang_20150710.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2CF7873FADDB7763710BED1E65D625C39AC45A07</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2CF7873FADDB7763710BED1E65D625C39AC45A07</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MOOC_Beihang_20150710</string>
+		</dict>
+	</array>
+</dict>
+</plist>

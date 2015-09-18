@@ -1,0 +1,865 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23079E441A627A9400FECC10 /* MPMoviePlayerController+Subtitles.m in Sources */ = {isa = PBXBuildFile; fileRef = 23079E431A627A9400FECC10 /* MPMoviePlayerController+Subtitles.m */; };
+		23079E471A627FDC00FECC10 /* MOOCUrlProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = 23079E461A627FDC00FECC10 /* MOOCUrlProcessing.m */; };
+		238ACC661A58143400AC4DF1 /* MOOCMyCourseShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 238ACC651A58143400AC4DF1 /* MOOCMyCourseShow.m */; };
+		2393F1321A4852FF0035516F /* MoocVideoActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393F1311A4852FF0035516F /* MoocVideoActivityIndicator.m */; };
+		5705A9A51AFF6D8000D99D94 /* MOOCReplyTheThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705A9A41AFF6D8000D99D94 /* MOOCReplyTheThread.m */; };
+		57369F571AFA087A000A2FF3 /* MOOCForumDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 57369F561AFA087A000A2FF3 /* MOOCForumDetails.m */; };
+		57453A101AEA4B0100E282F9 /* MOOCForumDiscussion.m in Sources */ = {isa = PBXBuildFile; fileRef = 57453A0F1AEA4B0100E282F9 /* MOOCForumDiscussion.m */; };
+		574860AE1AF86C5200A13E29 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860961AF86C5200A13E29 /* NSObject+SBJson.m */; };
+		574860AF1AF86C5200A13E29 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860991AF86C5200A13E29 /* SBJsonParser.m */; };
+		574860B01AF86C5200A13E29 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748609B1AF86C5200A13E29 /* SBJsonStreamParser.m */; };
+		574860B11AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748609D1AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m */; };
+		574860B21AF86C5200A13E29 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5748609F1AF86C5200A13E29 /* SBJsonStreamParserAdapter.m */; };
+		574860B31AF86C5200A13E29 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860A11AF86C5200A13E29 /* SBJsonStreamParserState.m */; };
+		574860B41AF86C5200A13E29 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860A31AF86C5200A13E29 /* SBJsonStreamWriter.m */; };
+		574860B51AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860A51AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.m */; };
+		574860B61AF86C5200A13E29 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860A71AF86C5200A13E29 /* SBJsonStreamWriterState.m */; };
+		574860B71AF86C5200A13E29 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860A91AF86C5200A13E29 /* SBJsonTokeniser.m */; };
+		574860B81AF86C5200A13E29 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860AB1AF86C5200A13E29 /* SBJsonUTF8Stream.m */; };
+		574860B91AF86C5200A13E29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860AD1AF86C5200A13E29 /* SBJsonWriter.m */; };
+		576EFB8A1AFB73C600BA0CAD /* MOOCCommentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */; };
+		57EB970E1B00A4600071CBC3 /* MOOCaddTheThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB970D1B00A4600071CBC3 /* MOOCaddTheThread.m */; };
+		97945B7819ADB03A0009BB60 /* MOOCSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97945B7719ADB03A0009BB60 /* MOOCSettingView.m */; };
+		97AFCE0019AA549A00476C51 /* MOOCActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFCDFF19AA549A00476C51 /* MOOCActivityIndicator.m */; };
+		97AFCE5319AB703600476C51 /* MOOCChapterList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFCE5219AB703600476C51 /* MOOCChapterList.m */; };
+		97AFCE5619AB704900476C51 /* MOOCSectionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFCE5519AB704900476C51 /* MOOCSectionList.m */; };
+		97AFCE5919AB705B00476C51 /* MOOCPositionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFCE5819AB705B00476C51 /* MOOCPositionList.m */; };
+		97AFCE5E19ACBAFB00476C51 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97AFCE5D19ACBAFB00476C51 /* MediaPlayer.framework */; };
+		97B7DD1A19B8E75B001C4061 /* MOOCQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B7DD1919B8E75B001C4061 /* MOOCQRCodeView.m */; };
+		97BA0D4E19B3202700C8420A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BA0D4D19B3202700C8420A /* CoreData.framework */; };
+		97BA0D5119B3212700C8420A /* MOOCCourseData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0D4F19B3212700C8420A /* MOOCCourseData.xcdatamodeld */; };
+		97BA0D5419B3700C00C8420A /* MOOCCourseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0D5319B3700C00C8420A /* MOOCCourseData.m */; };
+		97BA0D9F19B375B000C8420A /* MOOCDatabaseCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0D9E19B375B000C8420A /* MOOCDatabaseCourse.m */; };
+		97BA0DA219B375B100C8420A /* MOOCDatabaseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA0DA119B375B100C8420A /* MOOCDatabaseUser.m */; };
+		97C870C6199B11B500CA4DD3 /* MOOCMyCourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C870C5199B11B500CA4DD3 /* MOOCMyCourseList.m */; };
+		97CE8F9419A0AF030072041C /* MOOCMyCourseSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CE8F9319A0AF030072041C /* MOOCMyCourseSplitView.m */; };
+		97CE914619A4C8460072041C /* MOOCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CE914419A4C8460072041C /* MOOCConnection.m */; };
+		97CE914C19A4DB650072041C /* MOOCMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CE914B19A4DB650072041C /* MOOCMainView.m */; };
+		97FB0C19198CBFF500BB08B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C18198CBFF500BB08B5 /* Foundation.framework */; };
+		97FB0C1B198CBFF500BB08B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C1A198CBFF500BB08B5 /* CoreGraphics.framework */; };
+		97FB0C1D198CBFF500BB08B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C1C198CBFF500BB08B5 /* UIKit.framework */; };
+		97FB0C23198CBFF500BB08B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C21198CBFF500BB08B5 /* InfoPlist.strings */; };
+		97FB0C25198CBFF500BB08B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C24198CBFF500BB08B5 /* main.m */; };
+		97FB0C29198CBFF500BB08B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C28198CBFF500BB08B5 /* AppDelegate.m */; };
+		97FB0C2F198CBFF500BB08B5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C2D198CBFF500BB08B5 /* Main_iPad.storyboard */; };
+		97FB0C34198CBFF500BB08B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C33198CBFF500BB08B5 /* Images.xcassets */; };
+		97FB0C3B198CBFF500BB08B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C3A198CBFF500BB08B5 /* XCTest.framework */; };
+		97FB0C3C198CBFF500BB08B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C18198CBFF500BB08B5 /* Foundation.framework */; };
+		97FB0C3D198CBFF500BB08B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97FB0C1C198CBFF500BB08B5 /* UIKit.framework */; };
+		97FB0C45198CBFF500BB08B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C43198CBFF500BB08B5 /* InfoPlist.strings */; };
+		97FB0C47198CBFF500BB08B5 /* MOOC_BeihangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C46198CBFF500BB08B5 /* MOOC_BeihangTests.m */; };
+		97FB0C51198CCDCC00BB08B5 /* buaa_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C50198CCDCC00BB08B5 /* buaa_logo.png */; };
+		97FB0C54198CF5C000BB08B5 /* MOOCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C53198CF5C000BB08B5 /* MOOCLoginView.m */; };
+		97FB0C57198CF5E500BB08B5 /* MOOCWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C56198CF5E500BB08B5 /* MOOCWelcomeView.m */; };
+		97FB0C621990C9ED00BB08B5 /* courses.png in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C5F1990C9ED00BB08B5 /* courses.png */; };
+		97FB0C631990C9ED00BB08B5 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C601990C9ED00BB08B5 /* edit.png */; };
+		97FB0C641990C9ED00BB08B5 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0C611990C9ED00BB08B5 /* settings.png */; };
+		97FB0C6C19927DCD00BB08B5 /* MOOCCourseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C6B19927DCD00BB08B5 /* MOOCCourseViewCell.m */; };
+		97FB0C6F19927F0400BB08B5 /* MOOCCourseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0C6E19927F0400BB08B5 /* MOOCCourseView.m */; };
+		97FB0CB51993867D00BB08B5 /* MOOCCourseDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0CB41993867D00BB08B5 /* MOOCCourseDetailView.m */; };
+		97FB0CB7199494B900BB08B5 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 97FB0CB6199494B900BB08B5 /* login.png */; };
+		FA49897C1A20DAF2001E6E23 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA49897B1A20DAF2001E6E23 /* Main_iPhone.storyboard */; };
+		FA881C701A1C9DF9000C7A7F /* MoocIphoneCourseShow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA881C6F1A1C9DF9000C7A7F /* MoocIphoneCourseShow.m */; };
+		FAEBF39F19F14EB300D63073 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEBF39E19F14EB300D63073 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97FB0C3E198CBFF500BB08B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97FB0C0D198CBFF400BB08B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97FB0C14198CBFF500BB08B5;
+			remoteInfo = "MOOC@Beihang";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23079E421A627A9400FECC10 /* MPMoviePlayerController+Subtitles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPMoviePlayerController+Subtitles.h"; sourceTree = "<group>"; };
+		23079E431A627A9400FECC10 /* MPMoviePlayerController+Subtitles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPMoviePlayerController+Subtitles.m"; sourceTree = "<group>"; };
+		23079E451A627FDC00FECC10 /* MOOCUrlProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCUrlProcessing.h; sourceTree = "<group>"; };
+		23079E461A627FDC00FECC10 /* MOOCUrlProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCUrlProcessing.m; sourceTree = "<group>"; };
+		238ACC651A58143400AC4DF1 /* MOOCMyCourseShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCMyCourseShow.m; sourceTree = "<group>"; };
+		2393F1301A4852FF0035516F /* MoocVideoActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoocVideoActivityIndicator.h; path = ../MoocVideoActivityIndicator.h; sourceTree = "<group>"; };
+		2393F1311A4852FF0035516F /* MoocVideoActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoocVideoActivityIndicator.m; path = ../MoocVideoActivityIndicator.m; sourceTree = "<group>"; };
+		5705A9A31AFF6D8000D99D94 /* MOOCReplyTheThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCReplyTheThread.h; path = "MOOC@Beihang/MOOCReplyTheThread.h"; sourceTree = "<group>"; };
+		5705A9A41AFF6D8000D99D94 /* MOOCReplyTheThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCReplyTheThread.m; path = "MOOC@Beihang/MOOCReplyTheThread.m"; sourceTree = "<group>"; };
+		57369F551AFA087A000A2FF3 /* MOOCForumDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCForumDetails.h; path = "MOOC@Beihang/MOOCForumDetails.h"; sourceTree = "<group>"; };
+		57369F561AFA087A000A2FF3 /* MOOCForumDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCForumDetails.m; path = "MOOC@Beihang/MOOCForumDetails.m"; sourceTree = "<group>"; };
+		57453A0E1AEA4B0100E282F9 /* MOOCForumDiscussion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCForumDiscussion.h; sourceTree = "<group>"; };
+		57453A0F1AEA4B0100E282F9 /* MOOCForumDiscussion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCForumDiscussion.m; sourceTree = "<group>"; };
+		574860951AF86C5200A13E29 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		574860961AF86C5200A13E29 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		574860971AF86C5200A13E29 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		574860981AF86C5200A13E29 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		574860991AF86C5200A13E29 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		5748609A1AF86C5200A13E29 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		5748609B1AF86C5200A13E29 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		5748609C1AF86C5200A13E29 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		5748609D1AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		5748609E1AF86C5200A13E29 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		5748609F1AF86C5200A13E29 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		574860A01AF86C5200A13E29 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		574860A11AF86C5200A13E29 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		574860A21AF86C5200A13E29 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		574860A31AF86C5200A13E29 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		574860A41AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		574860A51AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		574860A61AF86C5200A13E29 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		574860A71AF86C5200A13E29 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		574860A81AF86C5200A13E29 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		574860A91AF86C5200A13E29 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		574860AA1AF86C5200A13E29 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		574860AB1AF86C5200A13E29 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		574860AC1AF86C5200A13E29 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		574860AD1AF86C5200A13E29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		576EFB881AFB73C600BA0CAD /* MOOCCommentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCCommentDetails.h; path = "MOOC@Beihang/MOOCCommentDetails.h"; sourceTree = "<group>"; };
+		576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCCommentDetails.m; path = "MOOC@Beihang/MOOCCommentDetails.m"; sourceTree = "<group>"; };
+		57EB970C1B00A4600071CBC3 /* MOOCaddTheThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCaddTheThread.h; path = "MOOC@Beihang/MOOCaddTheThread.h"; sourceTree = "<group>"; };
+		57EB970D1B00A4600071CBC3 /* MOOCaddTheThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCaddTheThread.m; path = "MOOC@Beihang/MOOCaddTheThread.m"; sourceTree = "<group>"; };
+		97945B7619ADB03A0009BB60 /* MOOCSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCSettingView.h; sourceTree = "<group>"; };
+		97945B7719ADB03A0009BB60 /* MOOCSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCSettingView.m; sourceTree = "<group>"; };
+		97AFCDFE19AA549A00476C51 /* MOOCActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCActivityIndicator.h; sourceTree = "<group>"; };
+		97AFCDFF19AA549A00476C51 /* MOOCActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCActivityIndicator.m; sourceTree = "<group>"; };
+		97AFCE5119AB703600476C51 /* MOOCChapterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCChapterList.h; sourceTree = "<group>"; };
+		97AFCE5219AB703600476C51 /* MOOCChapterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCChapterList.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97AFCE5419AB704900476C51 /* MOOCSectionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCSectionList.h; sourceTree = "<group>"; };
+		97AFCE5519AB704900476C51 /* MOOCSectionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCSectionList.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97AFCE5719AB705B00476C51 /* MOOCPositionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCPositionList.h; sourceTree = "<group>"; };
+		97AFCE5819AB705B00476C51 /* MOOCPositionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCPositionList.m; sourceTree = "<group>"; usesTabs = 0; };
+		97AFCE5D19ACBAFB00476C51 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		97B7DD1819B8E75B001C4061 /* MOOCQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCQRCodeView.h; sourceTree = "<group>"; };
+		97B7DD1919B8E75B001C4061 /* MOOCQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOOCQRCodeView.m; sourceTree = "<group>"; };
+		97B7DD1B19BF6D73001C4061 /* MOOCConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCConstraints.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97BA0D4D19B3202700C8420A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		97BA0D5019B3212700C8420A /* MOOCCourseData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MOOCCourseData.xcdatamodel; sourceTree = "<group>"; };
+		97BA0D5219B3700C00C8420A /* MOOCCourseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCCourseData.h; sourceTree = "<group>"; };
+		97BA0D5319B3700C00C8420A /* MOOCCourseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCCourseData.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97BA0D9D19B375B000C8420A /* MOOCDatabaseCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCDatabaseCourse.h; sourceTree = "<group>"; };
+		97BA0D9E19B375B000C8420A /* MOOCDatabaseCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCDatabaseCourse.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97BA0DA019B375B100C8420A /* MOOCDatabaseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCDatabaseUser.h; sourceTree = "<group>"; };
+		97BA0DA119B375B100C8420A /* MOOCDatabaseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCDatabaseUser.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97C870C4199B11B500CA4DD3 /* MOOCMyCourseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCMyCourseList.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97C870C5199B11B500CA4DD3 /* MOOCMyCourseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCMyCourseList.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97C870C7199B14BF00CA4DD3 /* MOOCMyCourseShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCMyCourseShow.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97CE8F9219A0AF030072041C /* MOOCMyCourseSplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCMyCourseSplitView.h; sourceTree = "<group>"; };
+		97CE8F9319A0AF030072041C /* MOOCMyCourseSplitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCMyCourseSplitView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97CE914319A4C8460072041C /* MOOCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97CE914419A4C8460072041C /* MOOCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCConnection.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97CE914A19A4DB650072041C /* MOOCMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCMainView.h; sourceTree = "<group>"; };
+		97CE914B19A4DB650072041C /* MOOCMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCMainView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C15198CBFF500BB08B5 /* MOOC@Beihang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MOOC@Beihang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FB0C18198CBFF500BB08B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97FB0C1A198CBFF500BB08B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97FB0C1C198CBFF500BB08B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		97FB0C20198CBFF500BB08B5 /* MOOC@Beihang-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MOOC@Beihang-Info.plist"; sourceTree = "<group>"; };
+		97FB0C22198CBFF500BB08B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		97FB0C24198CBFF500BB08B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C26198CBFF500BB08B5 /* MOOC@Beihang-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MOOC@Beihang-Prefix.pch"; sourceTree = "<group>"; };
+		97FB0C27198CBFF500BB08B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0C28198CBFF500BB08B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C2E198CBFF500BB08B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		97FB0C33198CBFF500BB08B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		97FB0C39198CBFF500BB08B5 /* MOOC@BeihangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MOOC@BeihangTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97FB0C3A198CBFF500BB08B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		97FB0C42198CBFF500BB08B5 /* MOOC@BeihangTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MOOC@BeihangTests-Info.plist"; sourceTree = "<group>"; };
+		97FB0C44198CBFF500BB08B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		97FB0C46198CBFF500BB08B5 /* MOOC_BeihangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOC_BeihangTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C50198CCDCC00BB08B5 /* buaa_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buaa_logo.png; sourceTree = "<group>"; };
+		97FB0C52198CF5C000BB08B5 /* MOOCLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCLoginView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0C53198CF5C000BB08B5 /* MOOCLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCLoginView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C55198CF5E500BB08B5 /* MOOCWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCWelcomeView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0C56198CF5E500BB08B5 /* MOOCWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCWelcomeView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C5F1990C9ED00BB08B5 /* courses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = courses.png; sourceTree = "<group>"; };
+		97FB0C601990C9ED00BB08B5 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		97FB0C611990C9ED00BB08B5 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		97FB0C6A19927DCD00BB08B5 /* MOOCCourseViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCCourseViewCell.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0C6B19927DCD00BB08B5 /* MOOCCourseViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCCourseViewCell.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0C6D19927F0400BB08B5 /* MOOCCourseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCCourseView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0C6E19927F0400BB08B5 /* MOOCCourseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCCourseView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0CB31993867D00BB08B5 /* MOOCCourseDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MOOCCourseDetailView.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		97FB0CB41993867D00BB08B5 /* MOOCCourseDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = MOOCCourseDetailView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		97FB0CB6199494B900BB08B5 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		FA49897B1A20DAF2001E6E23 /* Main_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FA881C6E1A1C9DF9000C7A7F /* MoocIphoneCourseShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoocIphoneCourseShow.h; sourceTree = "<group>"; };
+		FA881C6F1A1C9DF9000C7A7F /* MoocIphoneCourseShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoocIphoneCourseShow.m; sourceTree = "<group>"; };
+		FAEBF39B19F14E4500D63073 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main_iPad.strings"; sourceTree = "<group>"; };
+		FAEBF39C19F14E4500D63073 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FAEBF39D19F14E4500D63073 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FAEBF39E19F14EB300D63073 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97FB0C12198CBFF500BB08B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAEBF39F19F14EB300D63073 /* AVFoundation.framework in Frameworks */,
+				97BA0D4E19B3202700C8420A /* CoreData.framework in Frameworks */,
+				97AFCE5E19ACBAFB00476C51 /* MediaPlayer.framework in Frameworks */,
+				97FB0C1B198CBFF500BB08B5 /* CoreGraphics.framework in Frameworks */,
+				97FB0C1D198CBFF500BB08B5 /* UIKit.framework in Frameworks */,
+				97FB0C19198CBFF500BB08B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FB0C36198CBFF500BB08B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FB0C3B198CBFF500BB08B5 /* XCTest.framework in Frameworks */,
+				97FB0C3D198CBFF500BB08B5 /* UIKit.framework in Frameworks */,
+				97FB0C3C198CBFF500BB08B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57453A0D1AEA476D00E282F9 /* MOOCForumDisscussion */ = {
+			isa = PBXGroup;
+			children = (
+				57EB970C1B00A4600071CBC3 /* MOOCaddTheThread.h */,
+				57EB970D1B00A4600071CBC3 /* MOOCaddTheThread.m */,
+				5705A9A31AFF6D8000D99D94 /* MOOCReplyTheThread.h */,
+				5705A9A41AFF6D8000D99D94 /* MOOCReplyTheThread.m */,
+				57369F551AFA087A000A2FF3 /* MOOCForumDetails.h */,
+				57369F561AFA087A000A2FF3 /* MOOCForumDetails.m */,
+				57453A0E1AEA4B0100E282F9 /* MOOCForumDiscussion.h */,
+				57453A0F1AEA4B0100E282F9 /* MOOCForumDiscussion.m */,
+				576EFB881AFB73C600BA0CAD /* MOOCCommentDetails.h */,
+				576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */,
+			);
+			name = MOOCForumDisscussion;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		574860941AF86C5200A13E29 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				574860951AF86C5200A13E29 /* NSObject+SBJson.h */,
+				574860961AF86C5200A13E29 /* NSObject+SBJson.m */,
+				574860971AF86C5200A13E29 /* SBJson.h */,
+				574860981AF86C5200A13E29 /* SBJsonParser.h */,
+				574860991AF86C5200A13E29 /* SBJsonParser.m */,
+				5748609A1AF86C5200A13E29 /* SBJsonStreamParser.h */,
+				5748609B1AF86C5200A13E29 /* SBJsonStreamParser.m */,
+				5748609C1AF86C5200A13E29 /* SBJsonStreamParserAccumulator.h */,
+				5748609D1AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m */,
+				5748609E1AF86C5200A13E29 /* SBJsonStreamParserAdapter.h */,
+				5748609F1AF86C5200A13E29 /* SBJsonStreamParserAdapter.m */,
+				574860A01AF86C5200A13E29 /* SBJsonStreamParserState.h */,
+				574860A11AF86C5200A13E29 /* SBJsonStreamParserState.m */,
+				574860A21AF86C5200A13E29 /* SBJsonStreamWriter.h */,
+				574860A31AF86C5200A13E29 /* SBJsonStreamWriter.m */,
+				574860A41AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.h */,
+				574860A51AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.m */,
+				574860A61AF86C5200A13E29 /* SBJsonStreamWriterState.h */,
+				574860A71AF86C5200A13E29 /* SBJsonStreamWriterState.m */,
+				574860A81AF86C5200A13E29 /* SBJsonTokeniser.h */,
+				574860A91AF86C5200A13E29 /* SBJsonTokeniser.m */,
+				574860AA1AF86C5200A13E29 /* SBJsonUTF8Stream.h */,
+				574860AB1AF86C5200A13E29 /* SBJsonUTF8Stream.m */,
+				574860AC1AF86C5200A13E29 /* SBJsonWriter.h */,
+				574860AD1AF86C5200A13E29 /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		97BA0D9C19B3757400C8420A /* CourseData */ = {
+			isa = PBXGroup;
+			children = (
+				97BA0D4F19B3212700C8420A /* MOOCCourseData.xcdatamodeld */,
+				97BA0DA019B375B100C8420A /* MOOCDatabaseUser.h */,
+				97BA0DA119B375B100C8420A /* MOOCDatabaseUser.m */,
+				97BA0D9D19B375B000C8420A /* MOOCDatabaseCourse.h */,
+				97BA0D9E19B375B000C8420A /* MOOCDatabaseCourse.m */,
+				97BA0D5219B3700C00C8420A /* MOOCCourseData.h */,
+				97BA0D5319B3700C00C8420A /* MOOCCourseData.m */,
+			);
+			name = CourseData;
+			sourceTree = "<group>";
+		};
+		97CE8F9019A0AEC00072041C /* UserCourseViews */ = {
+			isa = PBXGroup;
+			children = (
+				97CE8F9219A0AF030072041C /* MOOCMyCourseSplitView.h */,
+				97CE8F9319A0AF030072041C /* MOOCMyCourseSplitView.m */,
+				97C870C7199B14BF00CA4DD3 /* MOOCMyCourseShow.h */,
+				238ACC651A58143400AC4DF1 /* MOOCMyCourseShow.m */,
+				97C870C4199B11B500CA4DD3 /* MOOCMyCourseList.h */,
+				97C870C5199B11B500CA4DD3 /* MOOCMyCourseList.m */,
+				97AFCE5119AB703600476C51 /* MOOCChapterList.h */,
+				97AFCE5219AB703600476C51 /* MOOCChapterList.m */,
+				97AFCE5419AB704900476C51 /* MOOCSectionList.h */,
+				97AFCE5519AB704900476C51 /* MOOCSectionList.m */,
+				97AFCE5719AB705B00476C51 /* MOOCPositionList.h */,
+				97AFCE5819AB705B00476C51 /* MOOCPositionList.m */,
+				97B7DD1819B8E75B001C4061 /* MOOCQRCodeView.h */,
+				97B7DD1919B8E75B001C4061 /* MOOCQRCodeView.m */,
+				FA881C6E1A1C9DF9000C7A7F /* MoocIphoneCourseShow.h */,
+				FA881C6F1A1C9DF9000C7A7F /* MoocIphoneCourseShow.m */,
+				23079E421A627A9400FECC10 /* MPMoviePlayerController+Subtitles.h */,
+				23079E431A627A9400FECC10 /* MPMoviePlayerController+Subtitles.m */,
+				23079E451A627FDC00FECC10 /* MOOCUrlProcessing.h */,
+				23079E461A627FDC00FECC10 /* MOOCUrlProcessing.m */,
+				57453A0D1AEA476D00E282F9 /* MOOCForumDisscussion */,
+			);
+			name = UserCourseViews;
+			sourceTree = "<group>";
+		};
+		97CE8F9119A0AED70072041C /* AllCourseViews */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C6D19927F0400BB08B5 /* MOOCCourseView.h */,
+				97FB0C6E19927F0400BB08B5 /* MOOCCourseView.m */,
+				97FB0C6A19927DCD00BB08B5 /* MOOCCourseViewCell.h */,
+				97FB0C6B19927DCD00BB08B5 /* MOOCCourseViewCell.m */,
+				97FB0CB31993867D00BB08B5 /* MOOCCourseDetailView.h */,
+				97FB0CB41993867D00BB08B5 /* MOOCCourseDetailView.m */,
+			);
+			name = AllCourseViews;
+			sourceTree = "<group>";
+		};
+		97CE914019A4C6980072041C /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C27198CBFF500BB08B5 /* AppDelegate.h */,
+				97FB0C28198CBFF500BB08B5 /* AppDelegate.m */,
+				FA49897B1A20DAF2001E6E23 /* Main_iPhone.storyboard */,
+				97FB0C2D198CBFF500BB08B5 /* Main_iPad.storyboard */,
+				97AFCDFE19AA549A00476C51 /* MOOCActivityIndicator.h */,
+				97AFCDFF19AA549A00476C51 /* MOOCActivityIndicator.m */,
+				2393F1301A4852FF0035516F /* MoocVideoActivityIndicator.h */,
+				2393F1311A4852FF0035516F /* MoocVideoActivityIndicator.m */,
+				97B7DD1B19BF6D73001C4061 /* MOOCConstraints.h */,
+			);
+			name = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		97CE914119A4C7DF0072041C /* NetworkConnections */ = {
+			isa = PBXGroup;
+			children = (
+				97CE914319A4C8460072041C /* MOOCConnection.h */,
+				97CE914419A4C8460072041C /* MOOCConnection.m */,
+			);
+			name = NetworkConnections;
+			sourceTree = "<group>";
+		};
+		97CE914219A4C8150072041C /* OtherView */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C55198CF5E500BB08B5 /* MOOCWelcomeView.h */,
+				97FB0C56198CF5E500BB08B5 /* MOOCWelcomeView.m */,
+				97FB0C52198CF5C000BB08B5 /* MOOCLoginView.h */,
+				97FB0C53198CF5C000BB08B5 /* MOOCLoginView.m */,
+				97CE914A19A4DB650072041C /* MOOCMainView.h */,
+				97CE914B19A4DB650072041C /* MOOCMainView.m */,
+				97945B7619ADB03A0009BB60 /* MOOCSettingView.h */,
+				97945B7719ADB03A0009BB60 /* MOOCSettingView.m */,
+			);
+			name = OtherView;
+			sourceTree = "<group>";
+		};
+		97FB0C0C198CBFF400BB08B5 = {
+			isa = PBXGroup;
+			children = (
+				574860941AF86C5200A13E29 /* SBJson */,
+				97FB0C1E198CBFF500BB08B5 /* MOOC@Beihang */,
+				97FB0C40198CBFF500BB08B5 /* MOOC@BeihangTests */,
+				97FB0C17198CBFF500BB08B5 /* Frameworks */,
+				97FB0C16198CBFF500BB08B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97FB0C16198CBFF500BB08B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C15198CBFF500BB08B5 /* MOOC@Beihang.app */,
+				97FB0C39198CBFF500BB08B5 /* MOOC@BeihangTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97FB0C17198CBFF500BB08B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAEBF39E19F14EB300D63073 /* AVFoundation.framework */,
+				97BA0D4D19B3202700C8420A /* CoreData.framework */,
+				97AFCE5D19ACBAFB00476C51 /* MediaPlayer.framework */,
+				97FB0C18198CBFF500BB08B5 /* Foundation.framework */,
+				97FB0C1A198CBFF500BB08B5 /* CoreGraphics.framework */,
+				97FB0C1C198CBFF500BB08B5 /* UIKit.framework */,
+				97FB0C3A198CBFF500BB08B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97FB0C1E198CBFF500BB08B5 /* MOOC@Beihang */ = {
+			isa = PBXGroup;
+			children = (
+				97CE914119A4C7DF0072041C /* NetworkConnections */,
+				97BA0D9C19B3757400C8420A /* CourseData */,
+				97CE914219A4C8150072041C /* OtherView */,
+				97CE914019A4C6980072041C /* Miscellaneous */,
+				97CE8F9119A0AED70072041C /* AllCourseViews */,
+				97CE8F9019A0AEC00072041C /* UserCourseViews */,
+				97FB0C1F198CBFF500BB08B5 /* Supporting Files */,
+			);
+			path = "MOOC@Beihang";
+			sourceTree = "<group>";
+		};
+		97FB0C1F198CBFF500BB08B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C581990C6AC00BB08B5 /* Bar Buttons */,
+				97FB0C50198CCDCC00BB08B5 /* buaa_logo.png */,
+				97FB0C20198CBFF500BB08B5 /* MOOC@Beihang-Info.plist */,
+				97FB0C21198CBFF500BB08B5 /* InfoPlist.strings */,
+				97FB0C24198CBFF500BB08B5 /* main.m */,
+				97FB0C26198CBFF500BB08B5 /* MOOC@Beihang-Prefix.pch */,
+				97FB0C33198CBFF500BB08B5 /* Images.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97FB0C40198CBFF500BB08B5 /* MOOC@BeihangTests */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C46198CBFF500BB08B5 /* MOOC_BeihangTests.m */,
+				97FB0C41198CBFF500BB08B5 /* Supporting Files */,
+			);
+			path = "MOOC@BeihangTests";
+			sourceTree = "<group>";
+		};
+		97FB0C41198CBFF500BB08B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0C42198CBFF500BB08B5 /* MOOC@BeihangTests-Info.plist */,
+				97FB0C43198CBFF500BB08B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97FB0C581990C6AC00BB08B5 /* Bar Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				97FB0CB6199494B900BB08B5 /* login.png */,
+				97FB0C5F1990C9ED00BB08B5 /* courses.png */,
+				97FB0C601990C9ED00BB08B5 /* edit.png */,
+				97FB0C611990C9ED00BB08B5 /* settings.png */,
+			);
+			name = "Bar Buttons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97FB0C14198CBFF500BB08B5 /* MOOC@Beihang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FB0C4A198CBFF500BB08B5 /* Build configuration list for PBXNativeTarget "MOOC@Beihang" */;
+			buildPhases = (
+				97FB0C11198CBFF500BB08B5 /* Sources */,
+				97FB0C12198CBFF500BB08B5 /* Frameworks */,
+				97FB0C13198CBFF500BB08B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MOOC@Beihang";
+			productName = "MOOC@Beihang";
+			productReference = 97FB0C15198CBFF500BB08B5 /* MOOC@Beihang.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97FB0C38198CBFF500BB08B5 /* MOOC@BeihangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97FB0C4D198CBFF500BB08B5 /* Build configuration list for PBXNativeTarget "MOOC@BeihangTests" */;
+			buildPhases = (
+				97FB0C35198CBFF500BB08B5 /* Sources */,
+				97FB0C36198CBFF500BB08B5 /* Frameworks */,
+				97FB0C37198CBFF500BB08B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97FB0C3F198CBFF500BB08B5 /* PBXTargetDependency */,
+			);
+			name = "MOOC@BeihangTests";
+			productName = "MOOC@BeihangTests";
+			productReference = 97FB0C39198CBFF500BB08B5 /* MOOC@BeihangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97FB0C0D198CBFF400BB08B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = admire;
+				TargetAttributes = {
+					97FB0C14198CBFF500BB08B5 = {
+						DevelopmentTeam = T6P7474RKD;
+					};
+					97FB0C38198CBFF500BB08B5 = {
+						TestTargetID = 97FB0C14198CBFF500BB08B5;
+					};
+				};
+			};
+			buildConfigurationList = 97FB0C10198CBFF500BB08B5 /* Build configuration list for PBXProject "MOOC@Beihang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 97FB0C0C198CBFF400BB08B5;
+			productRefGroup = 97FB0C16198CBFF500BB08B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97FB0C14198CBFF500BB08B5 /* MOOC@Beihang */,
+				97FB0C38198CBFF500BB08B5 /* MOOC@BeihangTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97FB0C13198CBFF500BB08B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FB0C641990C9ED00BB08B5 /* settings.png in Resources */,
+				97FB0C631990C9ED00BB08B5 /* edit.png in Resources */,
+				97FB0CB7199494B900BB08B5 /* login.png in Resources */,
+				97FB0C2F198CBFF500BB08B5 /* Main_iPad.storyboard in Resources */,
+				97FB0C34198CBFF500BB08B5 /* Images.xcassets in Resources */,
+				FA49897C1A20DAF2001E6E23 /* Main_iPhone.storyboard in Resources */,
+				97FB0C621990C9ED00BB08B5 /* courses.png in Resources */,
+				97FB0C23198CBFF500BB08B5 /* InfoPlist.strings in Resources */,
+				97FB0C51198CCDCC00BB08B5 /* buaa_logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FB0C37198CBFF500BB08B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FB0C45198CBFF500BB08B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97FB0C11198CBFF500BB08B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97CE8F9419A0AF030072041C /* MOOCMyCourseSplitView.m in Sources */,
+				97BA0D5419B3700C00C8420A /* MOOCCourseData.m in Sources */,
+				574860B11AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m in Sources */,
+				97FB0CB51993867D00BB08B5 /* MOOCCourseDetailView.m in Sources */,
+				574860AF1AF86C5200A13E29 /* SBJsonParser.m in Sources */,
+				574860B81AF86C5200A13E29 /* SBJsonUTF8Stream.m in Sources */,
+				97BA0D9F19B375B000C8420A /* MOOCDatabaseCourse.m in Sources */,
+				97BA0D5119B3212700C8420A /* MOOCCourseData.xcdatamodeld in Sources */,
+				97FB0C6C19927DCD00BB08B5 /* MOOCCourseViewCell.m in Sources */,
+				57EB970E1B00A4600071CBC3 /* MOOCaddTheThread.m in Sources */,
+				574860B21AF86C5200A13E29 /* SBJsonStreamParserAdapter.m in Sources */,
+				5705A9A51AFF6D8000D99D94 /* MOOCReplyTheThread.m in Sources */,
+				2393F1321A4852FF0035516F /* MoocVideoActivityIndicator.m in Sources */,
+				97BA0DA219B375B100C8420A /* MOOCDatabaseUser.m in Sources */,
+				574860B71AF86C5200A13E29 /* SBJsonTokeniser.m in Sources */,
+				97CE914C19A4DB650072041C /* MOOCMainView.m in Sources */,
+				97CE914619A4C8460072041C /* MOOCConnection.m in Sources */,
+				97FB0C54198CF5C000BB08B5 /* MOOCLoginView.m in Sources */,
+				97AFCE5619AB704900476C51 /* MOOCSectionList.m in Sources */,
+				97AFCE5319AB703600476C51 /* MOOCChapterList.m in Sources */,
+				97C870C6199B11B500CA4DD3 /* MOOCMyCourseList.m in Sources */,
+				574860B01AF86C5200A13E29 /* SBJsonStreamParser.m in Sources */,
+				574860B41AF86C5200A13E29 /* SBJsonStreamWriter.m in Sources */,
+				576EFB8A1AFB73C600BA0CAD /* MOOCCommentDetails.m in Sources */,
+				574860B91AF86C5200A13E29 /* SBJsonWriter.m in Sources */,
+				97945B7819ADB03A0009BB60 /* MOOCSettingView.m in Sources */,
+				97FB0C29198CBFF500BB08B5 /* AppDelegate.m in Sources */,
+				574860B31AF86C5200A13E29 /* SBJsonStreamParserState.m in Sources */,
+				23079E471A627FDC00FECC10 /* MOOCUrlProcessing.m in Sources */,
+				23079E441A627A9400FECC10 /* MPMoviePlayerController+Subtitles.m in Sources */,
+				97FB0C57198CF5E500BB08B5 /* MOOCWelcomeView.m in Sources */,
+				574860B51AF86C5200A13E29 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				97AFCE5919AB705B00476C51 /* MOOCPositionList.m in Sources */,
+				97B7DD1A19B8E75B001C4061 /* MOOCQRCodeView.m in Sources */,
+				57453A101AEA4B0100E282F9 /* MOOCForumDiscussion.m in Sources */,
+				238ACC661A58143400AC4DF1 /* MOOCMyCourseShow.m in Sources */,
+				574860B61AF86C5200A13E29 /* SBJsonStreamWriterState.m in Sources */,
+				57369F571AFA087A000A2FF3 /* MOOCForumDetails.m in Sources */,
+				97FB0C6F19927F0400BB08B5 /* MOOCCourseView.m in Sources */,
+				574860AE1AF86C5200A13E29 /* NSObject+SBJson.m in Sources */,
+				97AFCE0019AA549A00476C51 /* MOOCActivityIndicator.m in Sources */,
+				97FB0C25198CBFF500BB08B5 /* main.m in Sources */,
+				FA881C701A1C9DF9000C7A7F /* MoocIphoneCourseShow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97FB0C35198CBFF500BB08B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FB0C47198CBFF500BB08B5 /* MOOC_BeihangTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97FB0C3F198CBFF500BB08B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97FB0C14198CBFF500BB08B5 /* MOOC@Beihang */;
+			targetProxy = 97FB0C3E198CBFF500BB08B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97FB0C21198CBFF500BB08B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97FB0C22198CBFF500BB08B5 /* en */,
+				FAEBF39C19F14E4500D63073 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		97FB0C2D198CBFF500BB08B5 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97FB0C2E198CBFF500BB08B5 /* Base */,
+				FAEBF39B19F14E4500D63073 /* zh-Hans */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		97FB0C43198CBFF500BB08B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97FB0C44198CBFF500BB08B5 /* en */,
+				FAEBF39D19F14E4500D63073 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97FB0C48198CBFF500BB08B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97FB0C49198CBFF500BB08B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97FB0C4B198CBFF500BB08B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MOOC@Beihang/MOOC@Beihang-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "MOOC@Beihang/MOOC@Beihang-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		97FB0C4C198CBFF500BB08B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MOOC@Beihang/MOOC@Beihang-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "MOOC@Beihang/MOOC@Beihang-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		97FB0C4E198CBFF500BB08B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MOOC@Beihang.app/MOOC@Beihang";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MOOC@Beihang/MOOC@Beihang-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MOOC@BeihangTests/MOOC@BeihangTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		97FB0C4F198CBFF500BB08B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MOOC@Beihang.app/MOOC@Beihang";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MOOC@Beihang/MOOC@Beihang-Prefix.pch";
+				INFOPLIST_FILE = "MOOC@BeihangTests/MOOC@BeihangTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97FB0C10198CBFF500BB08B5 /* Build configuration list for PBXProject "MOOC@Beihang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FB0C48198CBFF500BB08B5 /* Debug */,
+				97FB0C49198CBFF500BB08B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FB0C4A198CBFF500BB08B5 /* Build configuration list for PBXNativeTarget "MOOC@Beihang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FB0C4B198CBFF500BB08B5 /* Debug */,
+				97FB0C4C198CBFF500BB08B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97FB0C4D198CBFF500BB08B5 /* Build configuration list for PBXNativeTarget "MOOC@BeihangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FB0C4E198CBFF500BB08B5 /* Debug */,
+				97FB0C4F198CBFF500BB08B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		97BA0D4F19B3212700C8420A /* MOOCCourseData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97BA0D5019B3212700C8420A /* MOOCCourseData.xcdatamodel */,
+			);
+			currentVersion = 97BA0D5019B3212700C8420A /* MOOCCourseData.xcdatamodel */;
+			name = MOOCCourseData.xcdatamodeld;
+			path = ../MOOCCourseData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 97FB0C0D198CBFF400BB08B5 /* Project object */;
+}

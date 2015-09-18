@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MOOCDatabaseCourse" representedClassName="MOOCDatabaseCourse" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="course_end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="course_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="course_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="course_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="course_start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="course_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="display_organization" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enrollment_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="enrollment_end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="enrollment_start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="is_full" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="last_update" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="registered" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sections" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MOOCDatabaseUser" representedClassName="MOOCDatabaseUser" syncable="YES">
+        <attribute name="language_code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_update" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mail_address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_full_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MOOCDatabaseCourse" positionX="-54" positionY="-9" width="128" height="300"/>
+        <element name="MOOCDatabaseUser" positionX="-36" positionY="9" width="128" height="120"/>
+    </elements>
+</model>

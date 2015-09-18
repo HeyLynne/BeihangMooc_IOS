@@ -1,0 +1,75 @@
+
+/* Class = "IBUILabel"; text = "全力"; ObjectID = "3or-j7-m3L"; */
+"3or-j7-m3L.text" = "全力";
+
+/* Class = "IBUIBarButtonItem"; title = "二维码"; ObjectID = "7TQ-ja-ork"; */
+"7TQ-ja-ork.title" = "二维码";
+
+/* Class = "IBUITabBarItem"; title = "我的课程"; ObjectID = "8M2-NE-kyz"; */
+"8M2-NE-kyz.title" = "我的课程";
+
+/* Class = "IBUIButton"; normalTitle = "关于我们"; ObjectID = "Che-sS-eke"; */
+"Che-sS-eke.normalTitle" = "关于我们";
+
+/* Class = "IBUIBarButtonItem"; title = "二维码"; ObjectID = "CjK-RN-SSH"; */
+"CjK-RN-SSH.title" = "二维码";
+
+/* Class = "IBUIButton"; normalTitle = "浏览"; ObjectID = "GEv-RT-9be"; */
+"GEv-RT-9be.normalTitle" = "浏览";
+
+/* Class = "IBUIButton"; normalTitle = "修改"; ObjectID = "ISY-Mj-K1s"; */
+"ISY-Mj-K1s.normalTitle" = "修改";
+
+/* Class = "IBUIButton"; normalTitle = "关 于 我 们"; ObjectID = "Iqi-6N-XUF"; */
+"Iqi-6N-XUF.normalTitle" = "关 于 我 们";
+
+/* Class = "IBUILabel"; text = "开课日期："; ObjectID = "Jju-Ea-3qD"; */
+"Jju-Ea-3qD.text" = "开课日期：";
+
+/* Class = "IBUIButton"; normalTitle = "选   课"; ObjectID = "K3A-Rr-Sm1"; */
+"K3A-Rr-Sm1.normalTitle" = "选   课";
+
+/* Class = "IBUITabBarItem"; title = "用户设置"; ObjectID = "O57-Ny-KlM"; */
+"O57-Ny-KlM.title" = "用户设置";
+
+/* Class = "IBUITextField"; text = "staff@example.com"; ObjectID = "Rvl-n9-hVW"; */
+"Rvl-n9-hVW.text" = "staff@example.com";
+
+/* Class = "IBUILabel"; text = "2014年11月11日"; ObjectID = "SuO-dL-CL0"; */
+"SuO-dL-CL0.text" = "2014年11月11日";
+
+/* Class = "IBUINavigationItem"; title = "浏览课程"; ObjectID = "YNO-0j-iVp"; */
+"YNO-0j-iVp.title" = "浏览课程";
+
+/* Class = "IBUITextField"; text = "edx"; ObjectID = "aa8-bO-AgF"; */
+"aa8-bO-AgF.text" = "edx";
+
+/* Class = "IBUIButton"; normalTitle = "修改"; ObjectID = "ceS-fH-aFS"; */
+"ceS-fH-aFS.normalTitle" = "修改";
+
+/* Class = "IBUILabel"; text = "M_WWWWWWWW"; ObjectID = "f1N-u1-1ON"; */
+"f1N-u1-1ON.text" = "M_WWWWWWWW";
+
+/* Class = "IBUILabel"; text = "结课日期："; ObjectID = "gbx-go-h5B"; */
+"gbx-go-h5B.text" = "结课日期：";
+
+/* Class = "IBUILabel"; text = "课程简介："; ObjectID = "mdG-eD-Ugj"; */
+"mdG-eD-Ugj.text" = "课程简介：";
+
+/* Class = "IBUITabBarItem"; title = "课程大全"; ObjectID = "mfB-xO-X4n"; */
+"mfB-xO-X4n.title" = "课程大全";
+
+/* Class = "IBUIButton"; normalTitle = "注          销"; ObjectID = "myC-wJ-cAS"; */
+"myC-wJ-cAS.normalTitle" = "注          销";
+
+/* Class = "IBUILabel"; text = "课程序号："; ObjectID = "sNz-qR-T1G"; */
+"sNz-qR-T1G.text" = "课程序号：";
+
+/* Class = "IBUILabel"; text = "2015年12月31日"; ObjectID = "uRe-kp-Q5k"; */
+"uRe-kp-Q5k.text" = "2015年12月31日";
+
+/* Class = "IBUIButton"; normalTitle = "注册"; ObjectID = "x2b-T4-5Pw"; */
+"x2b-T4-5Pw.normalTitle" = "注册";
+
+/* Class = "IBUIButton"; normalTitle = "修改"; ObjectID = "yRP-1B-e0G"; */
+"yRP-1B-e0G.normalTitle" = "修改";
