@@ -618,6 +618,52 @@
             </objects>
             <point key="canvasLocation" x="6000" y="735"/>
         </scene>
+        <!--回复评论-->
+        <scene sceneID="gPx-pd-4ng">
+            <objects>
+                <viewController storyboardIdentifier="reaplyAComment" id="nf0-jW-syz" userLabel="回复评论" customClass="MOOCReplyAComment" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uni-kI-5w5"/>
+                        <viewControllerLayoutGuide type="bottom" id="X19-hY-MQq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VPG-wf-t5B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipS-yH-Qih">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="添加回复" id="ovn-Yx-xRN">
+                                        <barButtonItem key="leftBarButtonItem" title="取消" id="MWG-e3-qhD">
+                                            <connections>
+                                                <action selector="cancleAction:" destination="nf0-jW-syz" id="hKv-up-5fD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="完成" id="B1z-4k-ot3">
+                                            <connections>
+                                                <action selector="okAction:" destination="nf0-jW-syz" id="Q9Z-cJ-sz2"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ryx-JA-BDs">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="no" returnKeyType="done"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="Ryx-JA-BDs" id="lOb-gz-GOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvX-Xh-b8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6424" y="735"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="les-7r-xcD">
             <objects>

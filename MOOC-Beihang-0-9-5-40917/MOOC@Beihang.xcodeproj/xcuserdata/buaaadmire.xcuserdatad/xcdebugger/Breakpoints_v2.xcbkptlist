@@ -154,22 +154,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460904451.633253"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "@implementation MOOCCommentDetails"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MOOC@Beihang/MOOCCommentDetails.m"
             timestampString = "460645840.275479"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
@@ -186,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460904451.633253"
+            timestampString = "465142352.248241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-receiveCommentContents:"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460904451.633253"
+            timestampString = "465142352.248241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "-receiveCommentContents:"
             landmarkType = "5">
          </BreakpointContent>
@@ -538,28 +522,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460904451.633253"
+            timestampString = "465142352.248241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
             landmarkName = "-receiveCommentContents:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460888749.970991"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -586,11 +554,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460888749.970991"
+            timestampString = "465134321.485029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "-heightForBasicCellAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -602,11 +570,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460897171.233834"
+            timestampString = "465142352.248241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "-configureBasicCell:atIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -634,12 +602,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MOOC@Beihang/MOOCCommentDetails.m"
-            timestampString = "460897171.233834"
+            timestampString = "465142352.248241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "-heightForBasicCellAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MOOC@Beihang/MOOCCommentDetails.m"
+            timestampString = "465142352.248241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MOOC@Beihang/MOOCCommentDetails.m"
+            timestampString = "465142312.38401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-receiveCommentContents:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

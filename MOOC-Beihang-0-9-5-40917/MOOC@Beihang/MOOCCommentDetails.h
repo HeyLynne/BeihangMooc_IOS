@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MOOCReplyAComment.h"
 
-@interface MOOCCommentDetails : UITableViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
+@interface MOOCCommentDetails : UITableViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UIActionSheetDelegate>
 @property (strong,nonatomic) NSMutableDictionary* requstInfo;
 @property (strong,nonatomic) NSMutableDictionary *user_info;
 @property (strong,nonatomic) NSMutableArray *comments;

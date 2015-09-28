@@ -11,7 +11,7 @@
 #import "MOOCConnection.h"
 
 @interface MOOCCommentDetails ()
-
+@property NSMutableDictionary *postInfo;
 @end
 
 @implementation MOOCCommentDetails
@@ -50,74 +50,9 @@
     //NSLog(@"indexpath:%p, %d",indexPath, indexPath.row);
     //NSLog(@"2");
     [self configureBasicCell:cell atIndexPath:indexPath];
-//    NSDictionary *dict=_comments[indexPath.row];
-//    UILabel *label;
-//    label=[cell viewWithTag:1];
-//    label.text=[dict objectForKey:@"username"];
-//    label=[cell viewWithTag:2];
-//   NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
-//   [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
-//    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-//    NSDate *created_time=[formatter dateFromString:[dict objectForKey:@"created_at"]];
-//    [formatter setDateFormat:@"yyyy年MM月dd日"];
-//    label.text=[formatter stringFromDate:created_time];
-//    label=[cell viewWithTag:3];
-//    NSString *ltext;
-//    if(![[dict objectForKey:@"is_parent_comment"] boolValue]){
-//        ltext=[NSString stringWithFormat:@"回复%@: %@",[dict objectForKey:@"parent_username"],[dict objectForKey:@"body"]];
-//    }
-//    else{
-//        ltext=[NSString stringWithFormat:@"%@说: %@",[dict objectForKey:@"username"],[dict objectForKey:@"body"]];
-//    }
-//    label.text=ltext;
-    
-//    UILabel *contentLabel=[[UILabel alloc] initWithFrame:CGRectMake(8, 27, 304,36)];
-//    if(![[dict objectForKey:@"is_parent_comment"] boolValue]){
-//        NSString *ltext=[NSString stringWithFormat:@"回复%@: %@",[dict objectForKey:@"parent_username"],[dict objectForKey:@"body"]];
-//        contentLabel.numberOfLines=0;
-//        contentLabel.lineBreakMode=NSLineBreakByWordWrapping;
-//        contentLabel.text=ltext;
-//        contentLabel.font=[UIFont systemFontOfSize:14];
-//        [contentLabel setTextColor:[[UIColor alloc] initWithRed:0.43 green:0.43 blue:0.43 alpha:1.0]];
-//        CGSize maxsize=CGSizeMake(304, 80);
-//        CGSize expectedSize=[ltext sizeWithFont:label.font constrainedToSize:maxsize lineBreakMode:NSLineBreakByWordWrapping];
-//        contentLabel.frame=CGRectMake(8, 27, 304, expectedSize.height);
-//        [contentLabel sizeToFit];
-//        [cell addSubview:contentLabel];
-//    }
-//    else{
-//        NSString *ltext=[NSString stringWithFormat:@"%@说: %@",[dict objectForKey:@"username"],[dict objectForKey:@"body"]];
-//        contentLabel.numberOfLines=0;
-//        contentLabel.lineBreakMode=NSLineBreakByWordWrapping;
-//        contentLabel.text=ltext;
-//        contentLabel.font=[UIFont systemFontOfSize:14];
-//        [contentLabel setTextColor:[[UIColor alloc] initWithRed:0.43 green:0.43 blue:0.43 alpha:1.0]];
-//        CGSize maxsize=CGSizeMake(304, 500);
-//        CGSize expectedSize=[ltext sizeWithFont:label.font constrainedToSize:maxsize lineBreakMode:NSLineBreakByWordWrapping];
-//        contentLabel.frame=CGRectMake(8, 27, 304, expectedSize.height);
-//        [contentLabel sizeToFit];
-//        [cell addSubview:contentLabel];
-//    }
     return cell;
 }
 
-//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"commentCell" forIndexPath:indexPath];
-//    UILabel *label=[cell viewWithTag:3];
-//    NSString *ltext;
-//    ltext=label.text;
-////    if(![[dict objectForKey:@"is_parent_comment"] boolValue]){
-////        ltext=[NSString stringWithFormat:@"回复%@: %@",[dict objectForKey:@"parent_username"],[dict objectForKey:@"body"]];
-////    }
-////    else{
-////        ltext=[NSString stringWithFormat:@"%@说: %@",[dict objectForKey:@"username"],[dict objectForKey:@"body"]];
-////    }
-//    
-//    CGSize maxsize=CGSizeMake(304, 80);
-//    CGSize expectedSize=[ltext sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:maxsize lineBreakMode:NSLineBreakByWordWrapping];
-//    return label.frame.size.height+48.0;
-//}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [self heightForBasicCellAtIndexPath:indexPath];
 }
@@ -132,10 +67,7 @@
     [self configureBasicCell:sizingCell atIndexPath:indexPath];
     [sizingCell setNeedsLayout];
     [sizingCell layoutIfNeeded];
-    //CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     UILabel *label=[sizingCell viewWithTag:3];
-   // NSLog(@"label-height:%f",label.frame.size.height);
-    //NSLog(@"cell-height:%f",size.height);
     return label.frame.size.height+label.frame.origin.y+5.0;
 }
 
@@ -159,18 +91,18 @@
         ltext=[NSString stringWithFormat:@"%@说: %@",[dict objectForKey:@"username"],[dict objectForKey:@"body"]];
     }
     label.text=ltext;
-    //NSLog(@"label height:%f",label.frame.size.height);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *dict=_comments[indexPath.row];
+    if([[dict objectForKey:@"is_parent_comment"] boolValue]){
+        UIActionSheet *actionsheet=[[UIActionSheet alloc] initWithTitle:nil	 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"回复"];
+        actionsheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+        [actionsheet showInView:self.view];
+    }
 }
-*/
 
 -(void)receiveCommentContents:(NSNotification *)noti
 {
@@ -184,7 +116,7 @@
             NSMutableDictionary *tempComment=[[NSMutableDictionary alloc] initWithDictionary:aComment];
             [tempComment setObject:@"1" forKey:@"is_parent_comment"];
             [tempComment setObject:@"" forKey:@"parent_id"];
-            [tempComment setObject:@"" forKey:@"parent_username"];
+            [tempComment setObject:@"" forKey:@"parent_user                                                                                                                                                                                                                                                                                                        name"];
             [allComments addObject:tempComment];
             if([[tempComment objectForKey:@"children"] count]>0){
                 for(NSDictionary *childComment in [tempComment objectForKey:@"children"]){
@@ -215,4 +147,11 @@
     NSLog(@"Notification @MOOCCommentDetails complete,Elapsed Time %f",[[NSDate date] timeIntervalSinceDate:date]);
 }
 
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex==0){
+        MOOCReplyAComment *replyView=[self.storyboard instantiateViewControllerWithIdentifier:@"reaplyAComment"];
+        [self presentViewController:replyView animated:YES completion:nil];
+    }
+}
 @end

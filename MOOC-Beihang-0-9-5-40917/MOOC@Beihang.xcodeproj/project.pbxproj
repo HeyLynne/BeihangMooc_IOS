@@ -27,6 +27,7 @@
 		574860B81AF86C5200A13E29 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860AB1AF86C5200A13E29 /* SBJsonUTF8Stream.m */; };
 		574860B91AF86C5200A13E29 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 574860AD1AF86C5200A13E29 /* SBJsonWriter.m */; };
 		576EFB8A1AFB73C600BA0CAD /* MOOCCommentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */; };
+		579C79831BB9688B0083014F /* MOOCReplyAComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 579C79821BB9688B0083014F /* MOOCReplyAComment.m */; };
 		57EB970E1B00A4600071CBC3 /* MOOCaddTheThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EB970D1B00A4600071CBC3 /* MOOCaddTheThread.m */; };
 		97945B7819ADB03A0009BB60 /* MOOCSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97945B7719ADB03A0009BB60 /* MOOCSettingView.m */; };
 		97AFCE0019AA549A00476C51 /* MOOCActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AFCDFF19AA549A00476C51 /* MOOCActivityIndicator.m */; };
@@ -123,6 +124,8 @@
 		574860AD1AF86C5200A13E29 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		576EFB881AFB73C600BA0CAD /* MOOCCommentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCCommentDetails.h; path = "MOOC@Beihang/MOOCCommentDetails.h"; sourceTree = "<group>"; };
 		576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCCommentDetails.m; path = "MOOC@Beihang/MOOCCommentDetails.m"; sourceTree = "<group>"; };
+		579C79811BB9688B0083014F /* MOOCReplyAComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCReplyAComment.h; path = "MOOC@Beihang/MOOCReplyAComment.h"; sourceTree = "<group>"; };
+		579C79821BB9688B0083014F /* MOOCReplyAComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCReplyAComment.m; path = "MOOC@Beihang/MOOCReplyAComment.m"; sourceTree = "<group>"; };
 		57EB970C1B00A4600071CBC3 /* MOOCaddTheThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MOOCaddTheThread.h; path = "MOOC@Beihang/MOOCaddTheThread.h"; sourceTree = "<group>"; };
 		57EB970D1B00A4600071CBC3 /* MOOCaddTheThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MOOCaddTheThread.m; path = "MOOC@Beihang/MOOCaddTheThread.m"; sourceTree = "<group>"; };
 		97945B7619ADB03A0009BB60 /* MOOCSettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOOCSettingView.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 				57453A0F1AEA4B0100E282F9 /* MOOCForumDiscussion.m */,
 				576EFB881AFB73C600BA0CAD /* MOOCCommentDetails.h */,
 				576EFB891AFB73C600BA0CAD /* MOOCCommentDetails.m */,
+				579C79811BB9688B0083014F /* MOOCReplyAComment.h */,
+				579C79821BB9688B0083014F /* MOOCReplyAComment.m */,
 			);
 			name = MOOCForumDisscussion;
 			path = ..;
@@ -568,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579C79831BB9688B0083014F /* MOOCReplyAComment.m in Sources */,
 				97CE8F9419A0AF030072041C /* MOOCMyCourseSplitView.m in Sources */,
 				97BA0D5419B3700C00C8420A /* MOOCCourseData.m in Sources */,
 				574860B11AF86C5200A13E29 /* SBJsonStreamParserAccumulator.m in Sources */,

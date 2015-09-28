@@ -10,31 +10,31 @@
 	<string>MOOC@Beihang</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2CF7873FADDB7763710BED1E65D625C39AC45A07</key>
-		<string>https://github.com/HeyLynne/MOOC_Beihang_20150710.git</string>
+		<key>25346D521295C8ADE31FEDD4D24377CB81373D22</key>
+		<string>https://github.com/HeyLynne/BeihangMooc_IOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MOOC-Beihang-version1/MOOC-Beihang-0-9-5-40917/MOOC@Beihang.xcodeproj</string>
+	<string>MOOC-Beihang-0-9-5-40917/MOOC@Beihang.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2CF7873FADDB7763710BED1E65D625C39AC45A07</key>
-		<string>../../../..</string>
+		<key>25346D521295C8ADE31FEDD4D24377CB81373D22</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/HeyLynne/MOOC_Beihang_20150710.git</string>
+	<string>https://github.com/HeyLynne/BeihangMooc_IOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2CF7873FADDB7763710BED1E65D625C39AC45A07</string>
+	<string>25346D521295C8ADE31FEDD4D24377CB81373D22</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2CF7873FADDB7763710BED1E65D625C39AC45A07</string>
+			<string>25346D521295C8ADE31FEDD4D24377CB81373D22</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MOOC_Beihang_20150710</string>
+			<string>BeihangMooc_IOS</string>
 		</dict>
 	</array>
 </dict>

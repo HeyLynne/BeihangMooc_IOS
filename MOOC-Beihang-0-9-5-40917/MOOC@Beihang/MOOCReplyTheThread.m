@@ -61,7 +61,6 @@
 
 - (IBAction)okAction:(id)sender {
     [_inputText resignFirstResponder];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotificationFromCreateAComment:) name:sMOOCCreateAComment object:nil];
    // NSLog(@"%@",_inputText.text);
     if ([[_inputText text] length]==0) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -69,6 +68,7 @@
         });
     }
     else{
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotificationFromCreateAComment:) name:sMOOCCreateAComment object:nil];
         [_requestInfo setObject:[_inputText text] forKey:@"body"];
         _prog=[[MoocVideoActivityIndicator alloc] init];
         [_prog start];
