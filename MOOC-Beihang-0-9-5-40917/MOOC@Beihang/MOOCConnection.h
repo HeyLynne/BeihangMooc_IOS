@@ -39,5 +39,5 @@ enum {
 -(void)MOOCCreateAComment:(NSDictionary *)dict;
 -(void)MOOCCreateAThread:(NSDictionary *)dict;
 -(void)MOOCGEtPageForumData:(NSString *)course_id pageNum:(int) page;
-
+-(void)MOOCReplyAComment:(NSDictionary *)dict;
 @end

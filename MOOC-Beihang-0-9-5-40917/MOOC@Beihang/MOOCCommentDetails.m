@@ -34,6 +34,7 @@
     self.navigationItem.title=@"回复详情";
     [[MOOCConnection sharedInstance] MOOCGetDiscussionDetail:_requstInfo];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveCommentContents:) name:sMOOCGetDiscussionDetails object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveFromReplyACommentAlready:) name:sMOOCReplyCommentAlready object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -108,9 +109,11 @@
             [_postInfo setObject:[dict objectForKey:@"course_id"] forKey:@"course_id"];
             [_postInfo setObject:[dict objectForKey:@"id"] forKey:@"comment_id"];
         }
-        UIActionSheet *actionsheet=[[UIActionSheet alloc] initWithTitle:nil	 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"回复"];
-        actionsheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-        [actionsheet showInView:self.view];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIActionSheet *actionsheet=[[UIActionSheet alloc] initWithTitle:nil	 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"回复", nil];
+            actionsheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+            [actionsheet showInView:self.tableView];
+        });
     }
 }
 
@@ -150,10 +153,7 @@
             });
         }
     }
-    dispatch_async(dispatch_get_main_queue(), ^{[
-                                                 self.tableView reloadData
-                                                 
-                                                 ];});
+    dispatch_async(dispatch_get_main_queue(), ^{[self.tableView reloadData];});
     NSLog(@"Notification @MOOCCommentDetails complete,Elapsed Time %f",[[NSDate date] timeIntervalSinceDate:date]);
 }
 
@@ -164,5 +164,12 @@
         replyView.postInfo=_postInfo;
         [self presentViewController:replyView animated:YES completion:nil];
     }
+}
+
+-(void)receiveFromReplyACommentAlready:(NSNotification *)noti
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[MOOCConnection sharedInstance] MOOCGetDiscussionDetail:_requstInfo];
+    });
 }
 @end
