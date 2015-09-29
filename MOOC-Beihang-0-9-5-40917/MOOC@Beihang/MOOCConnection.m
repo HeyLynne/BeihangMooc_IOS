@@ -517,6 +517,7 @@ __strong static MOOCConnection *sharedInstance = nil;
     [task resume];
 }
 
+//获取讨论区第一页数据
 -(void)MOOCGetForumDiscussionData:(NSString *)course_id
 {
     NSString *addr=[NSURL URLWithString:[NSString stringWithFormat:@"%s%@discussion_forum",Target_URL,@"/mobile_api/"]];
@@ -582,6 +583,7 @@ __strong static MOOCConnection *sharedInstance = nil;
     [task resume];
 }
 
+//讨论区首页获取分页数据
 -(void)MOOCGEtPageForumData:(NSString *)course_id pageNum:(int) page
 {
     NSString *addr=[NSURL URLWithString:[NSString stringWithFormat:@"%s%@discussion_forum?ajax=1&page=%d&sort_key=date&sort_order=desc",Target_URL,@"/mobile_api/",page]];
@@ -643,6 +645,7 @@ __strong static MOOCConnection *sharedInstance = nil;
     [task resume];
 }
 
+//获取一个主题帖的所有数据主要是回复
 -(void)MOOCGetDiscussionDetail:(NSDictionary *)dict
 {
     NSString *addr=[NSURL URLWithString:[NSString stringWithFormat:@"%s%@discussion_forum_details",Target_URL,@"/mobile_api/"]];
@@ -708,6 +711,7 @@ __strong static MOOCConnection *sharedInstance = nil;
     [task resume];
 }
 
+//新建回复
 -(void)MOOCCreateAComment:(NSDictionary *)dict
 {
     NSString *addr=[NSString stringWithFormat:@"%s/courses/%@/discussion/threads/%@/reply?ajax=1",Target_URL,[dict objectForKey:@"course_id"],[dict objectForKey:@"thread_id"]];
@@ -743,6 +747,7 @@ __strong static MOOCConnection *sharedInstance = nil;
     [task resume];
 }
 
+//新建主题帖
 -(void)MOOCCreateAThread:(NSDictionary *)dict
 {
     NSString *addr=[NSString stringWithFormat:@"%s%@new_thread",Target_URL,@"/mobile_api/"];
@@ -775,6 +780,42 @@ __strong static MOOCConnection *sharedInstance = nil;
         [ndict setObject:(err?[err localizedDescription]:(reason?reason:@"")) forKey:@"error"];
         [noti postNotificationName:sMOOCCreateAThread object:self userInfo:ndict];
      }];
+    [task resume];
+}
+
+//回复一个回复
+-(void)MOOCReplyAComment:(NSDictionary *)dict
+{
+    NSString *addr=[NSString stringWithFormat:@"%s/courses/%@/discussion/comments/%@/reply?ajax=1",Target_URL,[dict objectForKey:@"course_id"],[dict objectForKey:@"comment_id"]];
+    NSString *token=[[[NSUserDefaults standardUserDefaults] objectForKey:@"X-CSRFToken"] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSString *args=[NSString stringWithFormat:@"body=%@",[dict objectForKey:@"body"]];
+    NSMutableURLRequest *urlreq=[NSMutableURLRequest requestWithURL:[NSURL URLWithString:addr]];
+    [urlreq setHTTPMethod:@"POST"];
+    [urlreq setHTTPBody:[args dataUsingEncoding:NSUTF8StringEncoding]];
+    [urlreq setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"content-type"];
+    [urlreq addValue:token forHTTPHeaderField:@"X-CSRFToken"];
+    NSURLSessionDataTask *task=[session dataTaskWithRequest:urlreq completionHandler:^(NSData *data,NSURLResponse *res,NSError *err){
+        NSMutableDictionary *ndict=[[NSMutableDictionary alloc] init];
+        NSHTTPURLResponse *httpres=(NSHTTPURLResponse *)res;
+        NSString *reason=nil;
+        int code=[httpres statusCode];
+        if(code>=400){
+            [ndict setObject:@"0" forKey:@"status"];
+        }
+        else{
+            NSMutableDictionary *jsonDict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+            if([[jsonDict allKeys] containsObject:@"errors"]){
+                [ndict setObject:@"0" forKey:@"status"];
+            }
+            else{
+                [ndict setObject:@"1" forKey:@"status"];
+                [jsonDict removeAllObjects];
+            }
+        }
+        [ndict setObject:[NSString stringWithFormat:@"%d",code] forKey:@"statusCode"];
+        [ndict setObject:(err?[err localizedDescription]:(reason?reason:@"")) forKey:@"error"];
+        [noti postNotificationName:sMOOCReplyAComment object:self userInfo:ndict];
+    }];
     [task resume];
 }
 @end

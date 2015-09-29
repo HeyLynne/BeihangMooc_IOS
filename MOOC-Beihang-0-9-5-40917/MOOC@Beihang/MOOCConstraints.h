@@ -41,6 +41,8 @@ static NSString *const sMOOCCreateAComment=@"reply_the_thread";
 static NSString *const sMOOCCreateAThread=@"create_a_thread";
 static NSString *const sMOOCCreateCommentAlready=@"comment_already";
 static NSString *const sMOOCCreateThreadAlready=@"thready_already";
+static NSString *const sMOOCReplyAComment=@"reply_a_comment";
+static NSString *const sMOOCReplyCommentAlready=@"reply_comment_already";
 
 
 
