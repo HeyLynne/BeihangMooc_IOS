@@ -98,6 +98,16 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSDictionary *dict=_comments[indexPath.row];
     if([[dict objectForKey:@"is_parent_comment"] boolValue]){
+        if([_postInfo count]==0){
+            _postInfo=[[NSMutableDictionary alloc] init];
+            [_postInfo setObject:[dict objectForKey:@"course_id"] forKey:@"course_id"];
+            [_postInfo setObject:[dict objectForKey:@"id"] forKey:@"comment_id"];
+        }
+        else{
+            [_postInfo removeAllObjects];
+            [_postInfo setObject:[dict objectForKey:@"course_id"] forKey:@"course_id"];
+            [_postInfo setObject:[dict objectForKey:@"id"] forKey:@"comment_id"];
+        }
         UIActionSheet *actionsheet=[[UIActionSheet alloc] initWithTitle:nil	 delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"回复"];
         actionsheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
         [actionsheet showInView:self.view];
@@ -151,6 +161,7 @@
 {
     if(buttonIndex==0){
         MOOCReplyAComment *replyView=[self.storyboard instantiateViewControllerWithIdentifier:@"reaplyAComment"];
+        replyView.postInfo=_postInfo;
         [self presentViewController:replyView animated:YES completion:nil];
     }
 }
